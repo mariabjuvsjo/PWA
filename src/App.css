@@ -1,0 +1,264 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  height: 100%;
+}
+
+.container {
+  background-color: #252525;
+  min-height: 100vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.form {
+  margin: 0;
+  background: #252525;
+  padding: 20px 10px 20px 10px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  border: #83fbb0 1px solid;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #ccc;
+}
+
+.form h2 {
+  font-size: larger;
+  text-align: center;
+  color: #83fbb0;
+}
+
+
+.form-item {
+  padding: 15px 10px 10px 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 0.5px;
+}
+
+.form-item label {
+  display: block;
+  flex: 1;
+  margin-bottom: 5px;
+  cursor: pointer;
+  color: #83fbb0;
+}
+
+.form-item input {
+  padding: 4px 0px;
+  flex: 1;
+  background: transparent;
+  border-top: none;
+  outline: none;
+  border-left: none;
+  border-right: none;
+  caret-color: #fff;
+  color: #fff;
+  transition: all 200ms;
+  border-bottom-color: #fff;
+}
+
+.form-item input:focus {
+  border-bottom-color: #83fbb178;
+}
+
+::placeholder,
+::ms-input-placeholder,
+:ms-input-placeholder {
+  color: #ccc;
+  font-size: 12px;
+}
+
+.button {
+  flex: 1;
+  display: block;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1em;
+  color: #433d3d;
+  letter-spacing: .5px;
+  border-radius: 30px;
+  background-color: #83fbb0;
+  border: none;
+  outline: none;
+  transition: all 200ms;
+}
+
+.button:hover {
+  cursor: pointer;
+  background: #83fbb151;
+}
+
+
+/*
+WORK
+*/
+
+.work-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.calender {
+  background-color: #fff;
+  color: #252525;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+
+
+@import "../node_modules/@syncfusion/ej2-base/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-buttons/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-calendars/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-dropdowns/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-inputs/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-navigations/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-popups/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-react-schedule/styles/material.css";
+
+
+/**
+
+RAPORT COMPONENT
+**/
+
+.raport {
+
+  background-color: #252525;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+
+.work-card {
+  padding: 10px;
+  border: 1px white solid;
+}
+
+.react-datetime-picker__wrapper {
+  padding: 5px;
+  border-radius: 5px;
+  border-color: #252525;
+
+}
+
+.work-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 120px;
+  padding: 5px;
+  color: #83fbb0;
+  margin-bottom: 10px;
+  border-bottom: #83fbb0 thin solid;
+
+}
+
+
+
+.btn-work {
+  padding: 10px 5px;
+  background-color: #252525;
+  border-width: thin;
+  border-color: #83fbb0;
+  border-radius: 5px;
+  color: #83fbb0;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.btn-work:hover {
+  background-color: #a0cdb146;
+  color: white
+}
+
+.btn-stop {
+  padding: 10px 5px;
+  background-color: #252525;
+  border-width: thin;
+  border-color: brown;
+  border-radius: 5px;
+  color: brown;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.btn-stop:hover {
+  background-color: rgba(165, 42, 42, 0.387);
+  color: white;
+}
+
+.react-datetime-picker {
+  background-color: #252525;
+  border-radius: 5px;
+}
+
+.work-card {
+  border-radius: 5px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 5px #ccc;
+}
+
+.work-card h2 {
+  color: #83fbb0;
+}
+
+.thanks {
+  min-width: 100vw;
+  min-height: 100vh;
+  position: relative;
+
+}
+
+.thanks h2 {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+}
+
+.btn-back {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  color: #83fbb0;
+  border: #83fbb0 thin solid;
+  cursor: pointer;
+  box-shadow: 0 0 5px #ccc;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+
+}
+
+.btn-back:hover {
+  background-color: #a2bdac;
+}
